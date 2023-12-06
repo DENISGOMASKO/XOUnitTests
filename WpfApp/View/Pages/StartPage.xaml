@@ -1,0 +1,17 @@
+﻿<Page x:Class="WpfApp.View.Pages.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="StartPage">
+
+    <Grid>
+        <StackPanel Visibility="{Binding PreGameVisibility}" VerticalAlignment="Center">
+            <Button Command="{Binding StartGameAsX}" HorizontalAlignment="Center" MinHeight="30" MinWidth="150" Margin="10" MaxHeight="80" MaxWidth="300" Content="Играть за Х"/>
+            <Button Command="{Binding StartGameAsO}" HorizontalAlignment="Center" MinHeight="30" MinWidth="150" Margin="10" MaxHeight="80" MaxWidth="300" Content="Играть за О"/>
+        </StackPanel>
+    </Grid>
+</Page>
